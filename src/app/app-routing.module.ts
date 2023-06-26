@@ -24,7 +24,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'pickup',
+    path: 'pickup-call',
     loadChildren: () => import('./pages/pickup/pickup.module').then( m => m.PickupPageModule)
   },
   {

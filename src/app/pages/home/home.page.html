@@ -29,16 +29,21 @@
       [updatedAt]="'22/06/2023 16:45'"
       [notes]="'we have 2 bags that are full. One is with plastic, another with glass'"
     >
-    <ion-card-header header>
-      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
-    </ion-card-header>
-    <ion-button footer color="primary" fill="clear" size="full"
-      >See all...</ion-button
-    >
+      <ion-card-header header>
+        <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+      </ion-card-header>
+      <ion-button
+        footer
+        color="primary"
+        fill="clear"
+        size="full"
+        (click)="seeAll()"
+        >See all...</ion-button
+      >
     </app-pickup-call-card>
   </ion-list>
   <ion-fab vertical="bottom" horizontal="end">
-    <ion-fab-button>
+    <ion-fab-button (click)="addNew()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>

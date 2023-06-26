@@ -9,17 +9,35 @@
       <ion-card-header color="primary">
         <ion-card-title>Recyclica</ion-card-title>
       </ion-card-header>
-    
+
       <ion-card-content>
         <ion-item>
-          <ion-input label="Email" labelPlacement="floating" type="email"></ion-input>
+          <ion-input
+            label="Email"
+            labelPlacement="floating"
+            type="email"
+          ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input label="Password" labelPlacement="floating" type="password"></ion-input>
+          <ion-input
+            label="Password"
+            labelPlacement="floating"
+            type="password"
+          ></ion-input>
         </ion-item>
-        <ion-button fill="clear" color="dark" size="full">Forgot password</ion-button>
-        <ion-button color="primary" size="full">Login</ion-button>
-        <ion-button color="primary" fill="clear" size="full">Register</ion-button>
+        <ion-button fill="clear" color="dark" size="full"
+          >Forgot password</ion-button
+        >
+        <ion-button color="primary" size="full" (click)="login()"
+          >Login</ion-button
+        >
+        <ion-button
+          color="primary"
+          fill="clear"
+          size="full"
+          (click)="registerUser()"
+          >Register</ion-button
+        >
       </ion-card-content>
     </ion-card>
   </div>
