@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Pickup calls</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-pickup-call-card
+    status="On hold"
+    createdAt="22/06/2023 16:45"
+    updatedAt="21/06/2023"
+    notes="we have 2 bags that are full. One is with plastic, another with glass"
+  >
+  </app-pickup-call-card>
+
+  <app-pickup-call-card
+    status="Processing"
+    createdAt="21/06/2023"
+    updatedAt="05/06/2023 10:08"
+    notes="we have 2 bags that are full. One is with plastic, another with glass"
+  >
+  </app-pickup-call-card>
+
+  <app-pickup-call-card
+    status="Finished"
+    createdAt="21/06/2023"
+    updatedAt="19/06/2023 19:51"
+  >
+    <ion-item lines="none" footer>
+      <ion-icon name="trophy" slot="start" color="success"></ion-icon>
+      <ion-label color="success"> $ 15,00</ion-label>
+    </ion-item>
+  </app-pickup-call-card>
+</ion-content>
