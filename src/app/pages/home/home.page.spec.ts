@@ -35,7 +35,7 @@ describe('HomePage', () => {
   it('should go to new "pickup-call" by click on add button', () => {
     spyOn(router, 'navigate');
 
-    component.seeAll();
+    component.addNew();
 
     expect(router.navigate).toHaveBeenCalledWith(['pickup-call']);
   })
