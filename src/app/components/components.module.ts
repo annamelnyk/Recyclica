@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { PickupCallCardComponent } from 'src/app/components/pickup-call-card/pickup-call-card.component';
 import { ErrorMessageComponent } from './error-message/error-message.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [PickupCallCardComponent],

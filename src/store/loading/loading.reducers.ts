@@ -3,8 +3,12 @@ import { show, hide } from "./loading.actions";
 import { LoadingState } from "./LoadingState";
 import { Action } from "rxjs/internal/scheduler/Action";
 
+const initialState: LoadingState = {
+  show: false
+}
+
 const reducer = createReducer(
-  {},
+  initialState,
   on(show, () => {
     return { show: true }
   }),

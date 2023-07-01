@@ -20,8 +20,16 @@
               type="email"
             ></ion-input>
           </ion-item>
-          <app-error-message [field]="email" error="required" message="Email is required"></app-error-message>
-          <app-error-message [field]="email"  error="email" message="Email is invalid"></app-error-message>
+          <app-error-message
+            [field]="email"
+            error="required"
+            message="Email is required"
+          ></app-error-message>
+          <app-error-message
+            [field]="email"
+            error="email"
+            message="Email is invalid"
+          ></app-error-message>
           <ion-item>
             <ion-input
               formControlName="password"
@@ -30,12 +38,29 @@
               type="password"
             ></ion-input>
           </ion-item>
-          <app-error-message [field]="password"  error="required" message="Password is required"></app-error-message>
-          <app-error-message [field]="password"  error="requiredLength" message="Password length should contain at least 8 characters"></app-error-message>
-          <ion-button fill="clear" color="dark" size="full" [disabled]="!email?.valid"
+          <app-error-message
+            [field]="password"
+            error="required"
+            message="Password is required"
+          ></app-error-message>
+          <app-error-message
+            [field]="password"
+            error="requiredLength"
+            message="Password length should contain at least 8 characters"
+          ></app-error-message>
+          <ion-button
+            fill="clear"
+            color="dark"
+            size="full"
+            [disabled]="!email?.valid"
+            (click)="forgotEmailPassword()"
             >Forgot password</ion-button
           >
-          <ion-button color="primary" size="full" [disabled]="!form.valid" (click)="login()"
+          <ion-button
+            color="primary"
+            size="full"
+            [disabled]="!form.valid"
+            (click)="login()"
             >Login</ion-button
           >
           <ion-button
